@@ -37,36 +37,121 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Form submission handling
-const contactForm = document.querySelector('.contact-form');
+// EmailJS Configuration
+(function() {
+    // Initialize EmailJS with your public key
+    emailjs.init('_lOksHmbl2V5X_s-4');
+})();
+
+// Form submission handling with EmailJS
+const contactForm = document.querySelector('#contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
         // Get form data
-        const formData = new FormData(this);
-        const name = this.querySelector('input[type="text"]').value;
-        const email = this.querySelector('input[type="email"]').value;
-        const subject = this.querySelectorAll('input[type="text"]')[1].value;
-        const message = this.querySelector('textarea').value;
+        const name = document.getElementById('user_name').value;
+        const email = document.getElementById('user_email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
         
         // Simple validation
         if (!name || !email || !subject || !message) {
-            alert('Please fill in all fields');
+            showNotification('Please fill in all fields', 'error');
             return;
         }
         
         // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
-            alert('Please enter a valid email address');
+            showNotification('Please enter a valid email address', 'error');
             return;
         }
         
-        // For demo purposes, show success message
-        alert('Thank you for your message! I will get back to you soon.');
-        this.reset();
+        // Show loading state
+        const submitBtn = document.getElementById('submit-btn');
+        const submitText = document.getElementById('submit-text');
+        const submitLoading = document.getElementById('submit-loading');
+        
+        submitBtn.disabled = true;
+        submitText.style.display = 'none';
+        submitLoading.style.display = 'inline';
+        
+        // Prepare template parameters
+        const templateParams = {
+            from_name: name,
+            from_email: email,
+            subject: subject,
+            message: message,
+            to_name: 'Sandeep Chahal', // Your name
+            to_email: 'chahal.sdp@gmail.com',
+            sms_email: '2243912179@msg.fi.google.com' // Google Fi SMS gateway
+        };
+        
+        // Send email using EmailJS
+        emailjs.send('service_ywpbrdo', 'template_su3jz6c', templateParams)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                showNotification('Thank you for your message! I will get back to you soon.', 'success');
+                contactForm.reset();
+            }, function(error) {
+                console.log('FAILED...', error);
+                showNotification('Sorry, there was an error sending your message. Please try again.', 'error');
+            })
+            .finally(function() {
+                // Reset button state
+                submitBtn.disabled = false;
+                submitText.style.display = 'inline';
+                submitLoading.style.display = 'none';
+            });
     });
+}
+
+// Notification function
+function showNotification(message, type) {
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.className = `notification ${type}`;
+    notification.textContent = message;
+    
+    // Add styles
+    notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 15px 20px;
+        border-radius: 8px;
+        color: white;
+        font-weight: 500;
+        z-index: 10000;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        max-width: 300px;
+        word-wrap: break-word;
+    `;
+    
+    // Set background color based on type
+    if (type === 'success') {
+        notification.style.backgroundColor = '#10b981';
+    } else if (type === 'error') {
+        notification.style.backgroundColor = '#ef4444';
+    }
+    
+    // Add to page
+    document.body.appendChild(notification);
+    
+    // Animate in
+    setTimeout(() => {
+        notification.style.transform = 'translateX(0)';
+    }, 100);
+    
+    // Remove after 5 seconds
+    setTimeout(() => {
+        notification.style.transform = 'translateX(100%)';
+        setTimeout(() => {
+            document.body.removeChild(notification);
+        }, 300);
+    }, 5000);
 }
 
 // Add animation on scroll
