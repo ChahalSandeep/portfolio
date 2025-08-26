@@ -190,10 +190,11 @@ body {
     border: 1px solid rgba(0, 179, 179, 0.3);
     display: inline-block;
     position: relative;
-    overflow: visible;
+    overflow: hidden;
     white-space: nowrap;
-    max-width: 1100px;
+    max-width: 1300px;
     min-height: 55px;
+    width: 100%;
 }
 
 .hero-subtitle::before {
@@ -201,10 +202,10 @@ body {
     position: absolute;
     white-space: nowrap;
     color: #00b3b3;
-    left: 0;
+    left: 50%;
     top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
     text-align: center;
 }
 
@@ -667,7 +668,7 @@ section {
 
     .hero-subtitle {
         font-size: 1rem;
-        max-width: 1000px;
+        max-width: 1200px;
         min-height: 55px;
     }
 
