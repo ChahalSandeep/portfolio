@@ -178,27 +178,36 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     margin-bottom: 1.5rem;
     color: #00b3b3;
     font-weight: 500;
-    background: linear-gradient(90deg, #00b3b3, #ff8c00, #00b3b3);
-    background-size: 200% 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: bannerScroll 8s linear infinite;
-    white-space: nowrap;
+    background: rgba(0, 179, 179, 0.1);
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 179, 179, 0.3);
+    display: inline-block;
+    position: relative;
     overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 400px;
 }
 
-@keyframes bannerScroll {
+.hero-subtitle::before {
+    content: "Artificial Intelligence Scientist | Data Scientist | Machine Learning Engineer | Computer Vision Scientist";
+    position: absolute;
+    white-space: nowrap;
+    animation: scrollText 15s linear infinite;
+    color: #00b3b3;
+    left: 100%;
+}
+
+@keyframes scrollText {
     0% {
-        background-position: 200% 0;
+        transform: translateX(0);
     }
     100% {
-        background-position: -200% 0;
+        transform: translateX(-200%);
     }
 }
 
