@@ -190,15 +190,15 @@ body {
     color: #00b3b3;
     font-weight: 500;
     background: rgba(0, 179, 179, 0.1);
-    padding: 8px 16px;
+    padding: 12px 20px;
     border-radius: 20px;
     border: 1px solid rgba(0, 179, 179, 0.3);
     display: inline-block;
     position: relative;
     overflow: hidden;
     white-space: nowrap;
-    max-width: 800px;
-    min-height: 40px;
+    max-width: 400px;
+    min-height: 60px;
     width: 100%;
 }
 
@@ -206,7 +206,7 @@ body {
     content: "Artificial Intelligence Scientist | Data Scientist | Machine Learning Engineer | Computer Vision Scientist";
     position: absolute;
     white-space: nowrap;
-    animation: scrollText 35s linear infinite;
+    animation: scrollText 25s linear infinite;
     color: #00b3b3;
     left: 100%;
     top: 50%;
@@ -218,7 +218,7 @@ body {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-200%);
+        transform: translateX(-150%);
     }
 }
 
@@ -681,7 +681,8 @@ section {
 
     .hero-subtitle {
         font-size: 1rem;
-        max-width: 700px;
+        max-width: 350px;
+        min-height: 50px;
     }
 
     .hero-buttons {
