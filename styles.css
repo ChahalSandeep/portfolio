@@ -27,7 +27,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(26, 26, 26, 0.95);
+    background: rgba(26, 26, 26, 0.95) !important;
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
@@ -191,15 +191,18 @@ body {
     overflow: hidden;
     white-space: nowrap;
     max-width: 400px;
+    min-height: 40px;
 }
 
 .hero-subtitle::before {
     content: "Artificial Intelligence Scientist | Data Scientist | Machine Learning Engineer | Computer Vision Scientist";
     position: absolute;
     white-space: nowrap;
-    animation: scrollText 15s linear infinite;
+    animation: scrollText 20s linear infinite;
     color: #00b3b3;
     left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 @keyframes scrollText {
@@ -665,7 +668,8 @@ section {
     }
 
     .hero-subtitle {
-        font-size: 1.25rem;
+        font-size: 1rem;
+        max-width: 300px;
     }
 
     .hero-buttons {
