@@ -206,11 +206,11 @@ body {
     content: "Artificial Intelligence Scientist | Data Scientist | Machine Learning Engineer | Computer Vision Scientist";
     position: absolute;
     white-space: nowrap;
-    animation: scrollText 5s linear infinite;
+    animation: scrollText 10s linear infinite;
     color: #00b3b3;
-    left: 0;
+    left: 50%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
 }
 
 @keyframes scrollText {
