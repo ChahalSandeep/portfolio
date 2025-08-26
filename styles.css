@@ -197,7 +197,7 @@ body {
     position: relative;
     overflow: hidden;
     white-space: nowrap;
-    max-width: 200px;
+    max-width: 246px;
     min-height: 120px;
     width: 100%;
 }
@@ -206,7 +206,7 @@ body {
     content: "Artificial Intelligence Scientist | Data Scientist | Machine Learning Engineer | Computer Vision Scientist";
     position: absolute;
     white-space: nowrap;
-    animation: scrollText 25s linear infinite;
+    animation: scrollText 18s linear infinite;
     color: #00b3b3;
     left: 100%;
     top: 50%;
@@ -681,7 +681,7 @@ section {
 
     .hero-subtitle {
         font-size: 1rem;
-        max-width: 175px;
+        max-width: 215px;
         min-height: 100px;
     }
 
