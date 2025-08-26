@@ -142,8 +142,8 @@ body {
 
 .slide-word {
     display: block;
-    color: #00b3b3;
-    text-shadow: 0 0 20px rgba(0, 128, 128, 0.5);
+    color: #ff8c00;
+    text-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
     font-size: 2.5rem;
     font-weight: 700;
     position: absolute;
@@ -182,13 +182,29 @@ body {
     margin-bottom: 1.5rem;
     color: #00b3b3;
     font-weight: 500;
+    background: linear-gradient(90deg, #00b3b3, #ff8c00, #00b3b3);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: bannerScroll 8s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@keyframes bannerScroll {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
 }
 
 .hero-description {
     margin-bottom: 2rem;
 }
-
-
 
 .hero-subtitle-text {
     font-size: 1.1rem;
@@ -554,7 +570,9 @@ section {
 
 .form-group textarea {
     resize: vertical;
-    min-height: 120px;
+    min-height: 200px;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 /* Footer */
