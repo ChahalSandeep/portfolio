@@ -192,7 +192,7 @@ body {
     position: relative;
     overflow: hidden;
     white-space: nowrap;
-    max-width: 800px;
+    max-width: 900px;
     min-height: 55px;
     width: 100%;
 }
@@ -666,7 +666,7 @@ section {
 
     .hero-subtitle {
         font-size: 1rem;
-        max-width: 700px;
+        max-width: 800px;
         min-height: 55px;
     }
 
