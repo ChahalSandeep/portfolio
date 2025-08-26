@@ -208,9 +208,9 @@ body {
     white-space: nowrap;
     animation: scrollText 20s linear infinite;
     color: #00b3b3;
-    left: 50%;
+    left: 0;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
 }
 
 @keyframes scrollText {
