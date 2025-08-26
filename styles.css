@@ -199,7 +199,7 @@ body {
 }
 
 .hero-subtitle::before {
-    content: "AI Scientist  ·  Data Scientist ·  Machine Learning Engineer ·  Computer Vision Scientist";
+    content: "AI Scientist · Data Scientist · Machine Learning Engineer · Computer Vision Scientist";
     position: absolute;
     white-space: nowrap;
     color: #00b3b3;
