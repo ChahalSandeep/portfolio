@@ -208,7 +208,7 @@ body {
     white-space: nowrap;
     animation: scrollText 5s linear infinite;
     color: #00b3b3;
-    left: 100%;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
 }
