@@ -194,7 +194,6 @@ body {
     white-space: nowrap;
     max-width: 1100px;
     min-height: 55px;
-    width: 100%;
 }
 
 .hero-subtitle::before {
@@ -202,9 +201,11 @@ body {
     position: absolute;
     white-space: nowrap;
     color: #00b3b3;
-    left: 50%;
+    left: 0;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
 }
 
 
