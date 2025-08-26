@@ -203,7 +203,7 @@ body {
 }
 
 .hero-subtitle::before {
-    content: "Artificial Intelligence Scientist | Data Scientist | Machine Learning Engineer | Computer Vision Scientist | Artificial Intelligence Scientist | Data Scientist | Machine Learning Engineer | Computer Vision Scientist";
+    content: "Artificial Intelligence Scientist , Data Scientist , Machine Learning Engineer , Computer Vision Scientist , Artificial Intelligence Scientist , Data Scientist , Machine Learning Engineer , Computer Vision Scientist";
     position: absolute;
     white-space: nowrap;
     animation: scrollText 20s linear infinite;
