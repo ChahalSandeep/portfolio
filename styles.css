@@ -177,12 +177,7 @@ body {
     }
 }
 
-.work-intro {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    color: #cccccc;
-    font-weight: 400;
-}
+
 
 .hero-subtitle {
     font-size: 1.2rem;
@@ -675,9 +670,7 @@ section {
         font-size: 2rem;
     }
 
-    .work-intro {
-        font-size: 1rem;
-    }
+
 
     .hero-subtitle {
         font-size: 1rem;
