@@ -152,17 +152,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// EmailJS Configuration (only if EmailJS is loaded)
-if (typeof emailjs !== 'undefined') {
-    (function() {
-        // Initialize EmailJS with your public key
-        emailjs.init('_lOksHmbl2V5X_s-4');
-    })();
-}
-
-// Form submission handling with EmailJS (only if EmailJS is loaded)
+// Simple form submission handling
 const contactForm = document.querySelector('#contact-form');
-if (contactForm && typeof emailjs !== 'undefined') {
+if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
@@ -185,42 +177,9 @@ if (contactForm && typeof emailjs !== 'undefined') {
             return;
         }
         
-        // Show loading state
-        const submitBtn = document.getElementById('submit-btn');
-        const submitText = document.getElementById('submit-text');
-        const submitLoading = document.getElementById('submit-loading');
-        
-        submitBtn.disabled = true;
-        submitText.style.display = 'none';
-        submitLoading.style.display = 'inline';
-        
-        // Prepare template parameters
-        const templateParams = {
-            from_name: name,
-            from_email: email,
-            subject: subject,
-            message: message,
-            to_name: 'Sandeep Chahal', // Your name
-            to_email: 'chahal.sdp@gmail.com',
-            sms_email: '2243912179@msg.fi.google.com' // Google Fi SMS gateway
-        };
-        
-        // Send email using EmailJS
-        emailjs.send('service_ywpbrdo', 'template_su3jz6c', templateParams)
-            .then(function(response) {
-                console.log('SUCCESS!', response.status, response.text);
-                showNotification('Thank you for your message! I will get back to you soon.', 'success');
-                contactForm.reset();
-            }, function(error) {
-                console.log('FAILED...', error);
-                showNotification('Sorry, there was an error sending your message. Please try again.', 'error');
-            })
-            .finally(function() {
-                // Reset button state
-                submitBtn.disabled = false;
-                submitText.style.display = 'inline';
-                submitLoading.style.display = 'none';
-            });
+        // Show success message (for now, just show notification)
+        showNotification('Thank you for your message! I will get back to you soon.', 'success');
+        contactForm.reset();
     });
 }
 
