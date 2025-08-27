@@ -322,9 +322,12 @@ section {
 
 .about-stats {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
     margin-top: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .stat {
@@ -656,13 +659,20 @@ section {
     }
 
     .about-stats {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        max-width: 100%;
     }
 }
 
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2rem;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
 
