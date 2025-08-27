@@ -451,6 +451,11 @@ section {
     text-shadow: 0 0 5px rgba(0, 128, 128, 0.5);
 }
 
+.projects-button-container {
+    text-align: center;
+    margin-top: 3rem;
+}
+
 /* Skills Section */
 .skills {
     background: #222222;
