@@ -217,6 +217,7 @@ window.addEventListener('load', () => {
 
 // Project data for modals
 const projectData = {
+    // Featured Projects (index.html)
     project1: {
         title: "LA SURUM Project 1",
         description: "This is a comprehensive project showcasing advanced AI and machine learning techniques. The project demonstrates the implementation of cutting-edge algorithms for real-world applications, including data preprocessing, model training, and deployment strategies.",
@@ -255,6 +256,128 @@ const projectData = {
             "Real-time data streaming capabilities",
             "Automated report generation system",
             "Multi-user collaboration features"
+        ],
+        github: "#",
+        live: "#"
+    },
+    
+    // All Projects (projects.html)
+    'fraud-detection': {
+        title: "Fraud Detection System",
+        description: "Advanced machine learning system for real-time fraud detection using ensemble methods and deep learning. This project achieved 99.5% accuracy and reduced false positives by 40% through innovative feature engineering and model optimization techniques.",
+        technologies: ["Python", "TensorFlow", "Scikit-learn", "PostgreSQL", "Docker", "AWS"],
+        features: [
+            "Real-time transaction scoring with <100ms latency",
+            "Ensemble learning with XGBoost and Random Forest",
+            "Advanced feature engineering and selection",
+            "Automated model retraining pipeline",
+            "Comprehensive monitoring and alerting system",
+            "A/B testing framework for model validation"
+        ],
+        github: "#",
+        live: "#"
+    },
+    'computer-vision': {
+        title: "Computer Vision Pipeline",
+        description: "End-to-end computer vision system for object detection and tracking. Implemented YOLO and custom CNN architectures for real-time video processing with applications in surveillance, retail analytics, and autonomous systems.",
+        technologies: ["OpenCV", "PyTorch", "YOLO", "Docker", "CUDA", "FFmpeg"],
+        features: [
+            "Real-time object detection with YOLO v5/v8",
+            "Multi-object tracking with Kalman filters",
+            "Custom CNN architectures for specific use cases",
+            "Video processing pipeline with GPU acceleration",
+            "RESTful API for integration with other systems",
+            "Comprehensive model evaluation and testing suite"
+        ],
+        github: "#",
+        live: "#"
+    },
+    'autonomous-navigation': {
+        title: "Autonomous Navigation System",
+        description: "Robotic navigation system using SLAM algorithms and reinforcement learning. Successfully deployed on unmanned vehicles for path planning and obstacle avoidance in dynamic environments.",
+        technologies: ["ROS", "Python", "RL", "Gazebo", "C++", "OpenCV"],
+        features: [
+            "SLAM-based mapping and localization",
+            "Reinforcement learning for path planning",
+            "Dynamic obstacle avoidance algorithms",
+            "Multi-sensor fusion (LiDAR, Camera, IMU)",
+            "Real-time control system with PID tuning",
+            "Simulation environment for testing and validation"
+        ],
+        github: "#",
+        live: "#"
+    },
+    'predictive-analytics': {
+        title: "Predictive Analytics Platform",
+        description: "Comprehensive analytics platform for business intelligence and predictive modeling. Features real-time dashboards, automated reporting, and advanced statistical analysis capabilities.",
+        technologies: ["Python", "Streamlit", "Pandas", "Plotly", "Scikit-learn", "PostgreSQL"],
+        features: [
+            "Interactive dashboards with real-time data",
+            "Automated report generation and scheduling",
+            "Advanced statistical modeling and forecasting",
+            "Data visualization with Plotly and Matplotlib",
+            "User authentication and role-based access",
+            "API endpoints for data integration"
+        ],
+        github: "#",
+        live: "#"
+    },
+    'nlp-analysis': {
+        title: "NLP Text Analysis Tool",
+        description: "Natural language processing tool for sentiment analysis, text classification, and language modeling. Built with transformer architectures for high accuracy and performance.",
+        technologies: ["Transformers", "Hugging Face", "BERT", "FastAPI", "PyTorch", "Redis"],
+        features: [
+            "Sentiment analysis with 95%+ accuracy",
+            "Text classification for multiple domains",
+            "Named entity recognition (NER)",
+            "Language modeling and text generation",
+            "RESTful API with FastAPI",
+            "Real-time processing with Redis caching"
+        ],
+        github: "#",
+        live: "#"
+    },
+    'ml-pipeline': {
+        title: "ML Pipeline Orchestration",
+        description: "Scalable machine learning pipeline framework with automated training, evaluation, and deployment. Supports multiple ML frameworks and cloud platforms for enterprise use.",
+        technologies: ["Kubeflow", "MLflow", "Kubernetes", "AWS", "Docker", "Python"],
+        features: [
+            "Automated ML pipeline orchestration",
+            "Model versioning and experiment tracking",
+            "Scalable training on Kubernetes clusters",
+            "Automated model deployment and rollback",
+            "Monitoring and alerting for model performance",
+            "Multi-cloud deployment support"
+        ],
+        github: "#",
+        live: "#"
+    },
+    'mobile-app': {
+        title: "AI-Powered Mobile App",
+        description: "Cross-platform mobile application with integrated AI features including image recognition, voice processing, and personalized recommendations.",
+        technologies: ["React Native", "TensorFlow Lite", "Firebase", "Node.js", "Python", "AWS"],
+        features: [
+            "Real-time image recognition with TensorFlow Lite",
+            "Voice processing and speech-to-text",
+            "Personalized recommendation engine",
+            "Offline-first architecture",
+            "Push notifications and user engagement",
+            "Analytics and user behavior tracking"
+        ],
+        github: "#",
+        live: "#"
+    },
+    'cloud-infrastructure': {
+        title: "Cloud ML Infrastructure",
+        description: "Enterprise-grade cloud infrastructure for machine learning workloads. Includes auto-scaling, monitoring, and cost optimization features for production ML systems.",
+        technologies: ["AWS", "Terraform", "Docker", "Prometheus", "Kubernetes", "Python"],
+        features: [
+            "Infrastructure as Code with Terraform",
+            "Auto-scaling ML training clusters",
+            "Cost optimization and resource management",
+            "Comprehensive monitoring and alerting",
+            "Security and compliance features",
+            "Multi-region deployment support"
         ],
         github: "#",
         live: "#"
