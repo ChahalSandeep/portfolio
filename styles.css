@@ -355,9 +355,10 @@ section {
 }
 
 .stat p {
-    color: #ffffff;
-    font-weight: 400;
-    opacity: 0.8;
+    color: #cccccc;
+    font-weight: 300;
+    opacity: 0.7;
+    font-size: 0.9rem;
 }
 
 /* Projects Section */
