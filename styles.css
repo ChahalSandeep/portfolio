@@ -275,12 +275,12 @@ body {
 }
 
 .profile-image {
-    width: 200px;
-    height: 200px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid rgba(0, 128, 128, 0.3);
-    box-shadow: 0 0 20px rgba(0, 128, 128, 0.3);
+    border: 2px solid rgba(0, 128, 128, 0.3);
+    box-shadow: 0 0 15px rgba(0, 128, 128, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -646,8 +646,8 @@ section {
     }
 
     .profile-image {
-        width: 150px;
-        height: 150px;
+        width: 60px;
+        height: 60px;
     }
 
     .section-title {
