@@ -485,6 +485,36 @@ section {
     margin-top: 3rem;
 }
 
+.built-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.built-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.built-list li {
+    background: #2a2a2a;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #00b3b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #cccccc;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.built-list li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 12px rgba(0, 179, 179, 0.2);
+    border-left-color: #ff8c00;
+}
+
 /* Skills Section */
 .skills {
     background: #222222;
