@@ -217,49 +217,6 @@ window.addEventListener('load', () => {
 
 // Project data for modals
 const projectData = {
-    // Featured Projects (index.html)
-    project1: {
-        title: "LA SURUM Project 1",
-        description: "This is a comprehensive project showcasing advanced AI and machine learning techniques. The project demonstrates the implementation of cutting-edge algorithms for real-world applications, including data preprocessing, model training, and deployment strategies.",
-        technologies: ["Python", "TensorFlow", "Scikit-learn", "Docker", "AWS"],
-        features: [
-            "Advanced machine learning pipeline implementation",
-            "Real-time data processing and analysis",
-            "Scalable cloud deployment architecture",
-            "Comprehensive testing and validation framework",
-            "Interactive dashboard for results visualization"
-        ],
-        github: "#",
-        live: "#"
-    },
-    project2: {
-        title: "LA SURUM Project 2",
-        description: "A sophisticated computer vision application that leverages deep learning for image recognition and object detection. This project showcases the integration of multiple AI technologies to solve complex visual processing challenges.",
-        technologies: ["PyTorch", "OpenCV", "React", "Node.js", "MongoDB"],
-        features: [
-            "Real-time object detection and tracking",
-            "Multi-modal data fusion capabilities",
-            "Responsive web interface for user interaction",
-            "Advanced image preprocessing pipeline",
-            "Performance optimization for edge devices"
-        ],
-        github: "#",
-        live: "#"
-    },
-    project3: {
-        title: "LA SURUM Project 3",
-        description: "An innovative data analytics platform that provides insights through advanced statistical modeling and visualization. This project demonstrates the power of combining traditional analytics with modern AI techniques.",
-        technologies: ["Python", "Pandas", "Plotly", "FastAPI", "PostgreSQL"],
-        features: [
-            "Interactive data visualization dashboard",
-            "Advanced statistical analysis tools",
-            "Real-time data streaming capabilities",
-            "Automated report generation system",
-            "Multi-user collaboration features"
-        ],
-        github: "#",
-        live: "#"
-    },
     
     // All Projects (projects.html)
     'fraud-detection': {
