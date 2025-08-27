@@ -1,25 +1,63 @@
-# Personal Portfolio Website
+# Sandeep Chahal - AI/ML Portfolio Website
 
-A modern, responsive portfolio website built with HTML, CSS, and JavaScript. This website is designed to showcase your skills, projects, and professional information in an attractive and user-friendly format.
+A modern, responsive portfolio website showcasing expertise in AI, Machine Learning, Computer Vision, and Data Science. Built with HTML, CSS, and JavaScript, featuring interactive project modals and a comprehensive skills showcase.
 
 ## Features
 
 - **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
 - **Modern UI/UX**: Clean and professional design with smooth animations
+- **Interactive Project Modals**: Detailed project information with technology stacks and features
+- **Comprehensive Skills Section**: Organized engineering toolkit with hover effects
+- **Statistics Dashboard**: Professional achievements and metrics
 - **Smooth Scrolling**: Seamless navigation between sections
 - **Mobile Navigation**: Hamburger menu for mobile devices
 - **Contact Form**: Functional contact form with validation
-- **Project Showcase**: Display your projects with technology tags
-- **Skills Section**: Organized skills and technologies
 - **GitHub Pages Ready**: Optimized for hosting on GitHub Pages
 
 ## Sections
 
-1. **Hero Section**: Introduction with call-to-action buttons
-2. **About**: Personal information and statistics
-3. **Projects**: Portfolio of your work
-4. **Skills**: Technical skills and technologies
+1. **Hero Section**: Introduction with animated banner and statistics cards
+2. **Featured Projects**: Showcase of key projects with detailed modals
+3. **About Me**: Professional background and experience
+4. **Engineering Toolkit**: Comprehensive skills and technologies organized by category
 5. **Contact**: Contact information and form
+6. **All Projects Page**: Complete project portfolio with detailed modals
+
+## Project Showcase
+
+The portfolio features detailed project modals that include:
+- **Project descriptions** with technical details
+- **Technology stacks** with organized tags
+- **Key features** and capabilities
+- **GitHub and demo links**
+- **Responsive design** for all devices
+
+### Featured Projects
+- Fraud Detection System
+- Computer Vision Pipeline
+- Autonomous Navigation System
+
+### All Projects (8 total)
+- Fraud Detection System
+- Computer Vision Pipeline
+- Autonomous Navigation System
+- Predictive Analytics Platform
+- NLP Text Analysis Tool
+- ML Pipeline Orchestration
+- AI-Powered Mobile App
+- Cloud ML Infrastructure
+
+## Skills & Technologies
+
+### Engineering Toolkit Categories
+- **Soft Skills**: Communication, Leadership, Collaboration
+- **Languages & Scripting**: Python, C++, MATLAB, SQL, Bash
+- **Version Control & Collaboration**: Git, GitHub, Bitbucket, CircleCI
+- **Visualization**: Matplotlib, Seaborn, Plotly, Tableau, Power BI
+- **Cloud & Infrastructure**: AWS, GCP, Terraform, Docker, Kubernetes
+- **ML & CV Libraries**: PyTorch, TensorFlow, OpenCV, HuggingFace, ONNX
+- **MLOps & Pipelines**: MLflow, Airflow, DVC, PySpark, Prometheus
+- **Robotics & Simulation**: ROS, OpenAI Gym, Raspberry Pi, Sensors
 
 ## Getting Started
 
@@ -33,55 +71,56 @@ A modern, responsive portfolio website built with HTML, CSS, and JavaScript. Thi
 
 1. Clone or download this repository
 2. Open `index.html` in your web browser
-3. Customize the content to match your information
+3. Navigate to `projects.html` to see all projects
 
-### Customization
+### Repository Structure
+```
+portfolio-website/
+├── index.html          # Main portfolio page
+├── projects.html       # All projects page
+├── styles.css          # CSS styles and animations
+├── script.js           # JavaScript functionality and modals
+├── images/             # Profile and project images
+│   └── My_Screens.jpg  # Profile picture
+├── README.md           # Project documentation
+└── .gitignore          # Git ignore file
+```
 
-#### Personal Information
+## Customization
+
+### Personal Information
 Edit the following in `index.html`:
 - Name and title in the hero section
 - About section content
 - Contact information
 - Social media links
+- Statistics cards in hero section
 
-#### Projects
-Replace the dummy projects with your own:
-- Update project titles and descriptions
-- Add your project images
-- Update technology tags
-- Add links to your GitHub repositories and live demos
+### Projects
+Update project information in `script.js`:
+- Project titles and descriptions
+- Technology stacks
+- Key features
+- GitHub and demo links
 
-#### Skills
-Modify the skills section to reflect your expertise:
+### Skills
+Modify the Engineering Toolkit section in `index.html`:
 - Add/remove skill categories
 - Update skill items
-- Reorganize based on your strengths
+- Reorganize based on your expertise
 
-#### Styling
-Customize the appearance in `styles.css`:
-- Change colors in the CSS variables
-- Modify fonts and typography
-- Adjust spacing and layout
-- Update animations and transitions
+### Profile Picture
+Replace the profile image:
+1. Add your photo to the `images/` folder
+2. Update the `src` attribute in `index.html`
 
 ## Hosting on GitHub Pages
 
-1. Create a new repository on GitHub
-2. Push your code to the repository
-3. Go to repository Settings > Pages
-4. Select "Deploy from a branch"
-5. Choose the main branch and save
-6. Your site will be available at `https://yourusername.github.io/repository-name`
-
-### Repository Structure
-```
-portfolio-website/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles
-├── script.js           # JavaScript functionality
-├── README.md           # Project documentation
-└── .gitignore          # Git ignore file
-```
+1. Push your code to the GitHub repository
+2. Go to repository Settings > Pages
+3. Select "Deploy from a branch"
+4. Choose the main branch and save
+5. Your site will be available at `https://yourusername.github.io/repository-name`
 
 ## Browser Support
 
@@ -94,34 +133,28 @@ portfolio-website/
 ## Technologies Used
 
 - **HTML5**: Semantic markup
-- **CSS3**: Modern styling with Flexbox and Grid
-- **JavaScript (ES6+)**: Interactive functionality
+- **CSS3**: Modern styling with Flexbox, Grid, and animations
+- **JavaScript (ES6+)**: Interactive functionality and modal system
 - **Font Awesome**: Icons
 - **Google Fonts**: Typography
 
-## Customization Tips
+## Key Features
 
-### Adding Your Photo
-Replace the placeholder icon in the hero section:
-```html
-<div class="profile-placeholder">
-    <img src="path/to/your/photo.jpg" alt="Your Name">
-</div>
-```
+### Interactive Modals
+- Click any project card to see detailed information
+- Responsive modal design
+- Keyboard navigation (Escape key)
+- Click outside to close
 
-### Adding Project Images
-Replace the placeholder icons with actual project screenshots:
-```html
-<div class="project-image">
-    <img src="path/to/project-image.jpg" alt="Project Name">
-</div>
-```
+### Statistics Cards
+- Professional achievements display
+- Hover effects with diagonal stripes
+- Mobile-responsive design
 
-### Changing Colors
-Update the color scheme by modifying CSS variables or direct color values in `styles.css`.
-
-### Adding More Sections
-You can easily add new sections by following the existing pattern in the HTML and CSS.
+### Skills Organization
+- Categorized engineering toolkit
+- Hover effects with orange highlights
+- Responsive grid layout
 
 ## Contributing
 
@@ -137,4 +170,4 @@ If you have any questions or need help customizing your portfolio, feel free to 
 
 ---
 
-**Note**: This is a template with dummy content. Remember to replace all placeholder text and images with your actual information before publishing your portfolio.
+**Note**: This portfolio showcases expertise in AI/ML, Computer Vision, and Data Science. The projects and skills reflect real-world experience in these domains.
