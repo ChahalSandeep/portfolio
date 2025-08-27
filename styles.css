@@ -114,7 +114,6 @@ body {
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
     align-items: flex-start;
-    margin-bottom: 3rem;
 }
 
 .hero-title {
@@ -325,8 +324,9 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    margin-top: 0;
-    clear: both;
+    margin-top: 3rem;
+    display: block;
+    width: 100%;
 }
 
 .about-stats {
@@ -664,12 +664,8 @@ section {
         gap: 2rem;
     }
 
-    .hero-container {
-        margin-bottom: 2rem;
-    }
-
     .hero-stats-fullwidth {
-        margin-top: 0;
+        margin-top: 2rem;
     }
 
     .about-stats {
