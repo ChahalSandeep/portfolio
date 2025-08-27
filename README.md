@@ -1,4 +1,4 @@
-# Sandeep Chahal - AI/ML Portfolio Website
+# Sandeep Chahal's Portfolio Website
 
 A modern, responsive portfolio website showcasing expertise in AI, Machine Learning, Computer Vision, and Data Science. Built with HTML, CSS, and JavaScript, featuring interactive project modals and a comprehensive skills showcase.
 
