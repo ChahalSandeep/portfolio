@@ -275,8 +275,8 @@ body {
 }
 
 .profile-image {
-    width: 80px;
-    height: 80px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid rgba(0, 128, 128, 0.3);
@@ -345,6 +345,15 @@ section {
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(0, 128, 128, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.stat:hover {
+    background: linear-gradient(135deg, #ff8c00, #ff6b35);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 140, 0, 0.4);
+    border-color: rgba(255, 140, 0, 0.5);
 }
 
 .stat h3 {
@@ -651,8 +660,8 @@ section {
     }
 
     .profile-image {
-        width: 60px;
-        height: 60px;
+        width: 120px;
+        height: 120px;
     }
 
     .section-title {
