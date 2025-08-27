@@ -710,6 +710,17 @@ section {
         gap: 1rem;
         max-width: 100%;
     }
+
+    /* Mobile touch-friendly hover effects */
+    .stat:active::before {
+        transform: rotate(45deg) translateX(100%);
+    }
+
+    .stat:active {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(255, 140, 0, 0.4);
+        border-color: rgba(255, 140, 0, 0.5);
+    }
 }
 
 @media (max-width: 480px) {
@@ -720,6 +731,17 @@ section {
     .about-stats {
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+
+    /* Small mobile touch-friendly hover effects */
+    .stat:active::before {
+        transform: rotate(45deg) translateX(100%);
+    }
+
+    .stat:active {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(255, 140, 0, 0.4);
+        border-color: rgba(255, 140, 0, 0.5);
     }
 
 
