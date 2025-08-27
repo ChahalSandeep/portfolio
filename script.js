@@ -152,7 +152,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Simple form submission handling
+// Contact form handling with mailto
 const contactForm = document.querySelector('#contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
@@ -177,8 +177,14 @@ if (contactForm) {
             return;
         }
         
-        // Show success message (for now, just show notification)
-        showNotification('Thank you for your message! I will get back to you soon.', 'success');
+        // Create mailto link
+        const mailtoLink = `mailto:chahal.sdp@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+        
+        // Open email client
+        window.location.href = mailtoLink;
+        
+        // Show success message
+        showNotification('Opening your email client...', 'success');
         contactForm.reset();
     });
 }
