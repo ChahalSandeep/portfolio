@@ -343,6 +343,7 @@ const projectData = {
 
 // Modal functions
 function openProjectModal(projectId) {
+    console.log('openProjectModal called with:', projectId);
     const modal = document.getElementById('projectModal');
     const project = projectData[projectId];
     
