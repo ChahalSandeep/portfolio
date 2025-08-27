@@ -593,7 +593,7 @@ section {
 
 .skill-item:hover {
     background: rgba(255, 140, 0, 0.2);
-    color: #ff8c00;
+    color: #00b3b3;
     border-color: rgba(255, 140, 0, 0.5);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 140, 0, 0.4);
