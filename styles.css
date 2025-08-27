@@ -515,6 +515,33 @@ section {
     border-left-color: #ff8c00;
 }
 
+.soft-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 3rem auto 0;
+}
+
+.soft-skills-grid .skill-item {
+    background: rgba(0, 128, 128, 0.2);
+    color: #00b3b3;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid rgba(0, 128, 128, 0.3);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.soft-skills-grid .skill-item:hover {
+    background: rgba(0, 179, 179, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 179, 179, 0.3);
+    border-color: rgba(0, 179, 179, 0.5);
+}
+
 /* Skills Section */
 .skills {
     background: #222222;
