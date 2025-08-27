@@ -587,6 +587,16 @@ section {
     font-size: 0.875rem;
     font-weight: 500;
     border: 1px solid rgba(0, 128, 128, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-item:hover {
+    background: rgba(255, 140, 0, 0.2);
+    color: #ff8c00;
+    border-color: rgba(255, 140, 0, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 140, 0, 0.4);
 }
 
 /* Contact Section */
