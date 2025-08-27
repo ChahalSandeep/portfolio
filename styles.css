@@ -113,7 +113,7 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .hero-title {
@@ -320,11 +320,17 @@ section {
     line-height: 1.8;
 }
 
+.hero-stats-fullwidth {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 3rem;
+}
+
 .about-stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
-    margin-top: 3rem;
     max-width: 100%;
 }
 
@@ -654,6 +660,10 @@ section {
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .hero-stats-fullwidth {
+        margin-top: 2rem;
     }
 
     .about-stats {
