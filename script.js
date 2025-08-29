@@ -46,7 +46,7 @@ const projectData = {
     'llm-retrieval': {
         title: "Hybrid LLM Retrieval System for Product Intelligence",
         description: "Designed and led the development of a hybrid LLM-based system combining structured data querying and unstructured document search to provide unified, real-time answers to natural language product questions. The system uses a multi-agent architecture with Snowflake SQL generation and semantic retrieval over Confluence pages, enabling teams to access metrics, meeting notes, documentation, and fraud insights in one conversational interface.",
-        technologies: ["SQLCoder (LLAMA)", "Python", "Snowflake", "FAISS", "Confluence API", "LangChain", "HuggingFace"],
+        technologies: ["SQLCoder (LLAMA)", "Python", "Snowflake", "FAISS", "Confluence API", "LangChain", "HuggingFace", "Streamlit"],
         features: [
             "<span class='section-header'>Role:</span>",
             "Designed the entire architecture and multi-agent flow",
