@@ -1179,10 +1179,10 @@ section {
 
 /* Section headers in modal features */
 .modal-features li {
-    list-style: disc;
+    list-style: none;
     margin-bottom: 0.5rem;
     line-height: 1.5;
-    padding-left: 1.5rem;
+    padding-left: 0;
 }
 
 /* Style section headers */
