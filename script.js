@@ -17,16 +17,28 @@ const projectData = {
         live: "#"
     },
     'revenue-analysis': {
-        title: "Behavioral Signal Modeling for Cross-Product Insights",
+        title: "Cross-Product Revenue Opportunity Analysis",
         description: "Discovered untapped revenue potential for an underperforming fraud product by analyzing behavioral overlap and retention patterns across customers using other tools in the suite. Led cross-functional analysis to quantify recoverable revenue and customer segments with monetization potential.",
         technologies: ["Python", "PySpark", "Databricks", "Snowflake", "Pandas", "Matplotlib", "Power BI"],
         features: [
-            "Identified the opportunity and framed the business problem",
-            "Led data exploration and designed the analytical framework",
-            "Presented findings to executives and influenced sales strategy",
-            "Quantified recoverable revenue and customer segments",
-            "Analyzed behavioral overlap and retention patterns",
-            "Used in executive pitches and GTM strategy decks"
+            "Role:",
+            "• Identified the opportunity and framed the business problem",
+            "• Led data exploration and designed the analytical framework",
+            "• Presented findings to executives and influenced sales strategy",
+            "",
+            "Impact:",
+            "• Projected $2M+ ARR opportunity by identifying qualified customer segments",
+            "• Resulted in a 100% increase in the adoption of the targeted product",
+            "• Strategy influenced sales enablement materials and pitch customizations",
+            "• Adopted by GTM and customer success teams as part of account expansion playbooks",
+            "• Executive leadership praised the project as a model for future product growth initiatives",
+            "",
+            "Approach:",
+            "• Merged multiple internal datasets from different products into a unified customer graph",
+            "• Identified overlap patterns and behavior trends of high-LTV customers using the underperforming product",
+            "• Projected expected revenue uplift by extrapolating observed buying patterns",
+            "• Created tiered opportunity segments to guide sales and marketing efforts",
+            "• Visualized insights and segmentation in Power BI dashboards and presented findings to execs"
         ],
         github: "#",
         live: "#"
