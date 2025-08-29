@@ -1177,6 +1177,15 @@ section {
     line-height: 1.5;
 }
 
+/* Bold section headers in modal features */
+.modal-features li strong {
+    color: #00b3b3;
+    font-weight: 700;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
 .modal-links {
     display: flex;
     gap: 1rem;
