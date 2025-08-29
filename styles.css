@@ -1204,6 +1204,92 @@ section {
     content: none;
 }
 
+/* Architecture Diagram Styles */
+.architecture-diagram {
+    background: #1a1a1a;
+    border: 1px solid rgba(0, 179, 179, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+.diagram-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.diagram-component {
+    background: #2a2a2a;
+    border: 2px solid #00b3b3;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+    min-width: 200px;
+    transition: all 0.3s ease;
+}
+
+.diagram-component:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 179, 179, 0.3);
+}
+
+.diagram-component small {
+    color: #cccccc;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.diagram-arrow {
+    text-align: center;
+    color: #00b3b3;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.diagram-component.user {
+    background: linear-gradient(135deg, #00b3b3, #008080);
+    border-color: #00b3b3;
+}
+
+.diagram-component.llm {
+    background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
+    border-color: #ff8c00;
+}
+
+.diagram-component.agent {
+    background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
+    border-color: #00b3b3;
+}
+
+.diagram-component.fusion {
+    background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
+    border-color: #ff8c00;
+}
+
+.diagram-component.frontend {
+    background: linear-gradient(135deg, #00b3b3, #008080);
+    border-color: #00b3b3;
+}
+
+/* Mobile responsive for diagram */
+@media (max-width: 768px) {
+    .diagram-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .diagram-component {
+        min-width: 150px;
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
 .modal-links {
     display: flex;
     gap: 1rem;
