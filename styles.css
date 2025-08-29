@@ -1178,23 +1178,31 @@ section {
 }
 
 /* Section headers in modal features */
-.modal-features li:first-child,
-.modal-features li:nth-child(9),
-.modal-features li:nth-child(17) {
-    list-style: none;
+.modal-features li {
+    list-style: disc;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    padding-left: 1.5rem;
+}
+
+/* Style section headers */
+.section-header {
     color: #00b3b3;
     font-weight: 700;
     text-decoration: underline;
     font-size: 1.1rem;
+    display: block;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+}
+
+/* Remove bullet points for list items containing section headers */
+.modal-features li:has(.section-header) {
+    list-style: none;
     padding-left: 0;
 }
 
-/* Remove bullet points for section headers */
-.modal-features li:first-child::before,
-.modal-features li:nth-child(9)::before,
-.modal-features li:nth-child(17)::before {
+.modal-features li:has(.section-header)::before {
     content: none;
 }
 
