@@ -239,6 +239,34 @@ const projectData = {
         ],
         github: "#",
         live: "#"
+    },
+    'statistical-model-comparison': {
+        title: "Statistical Model Comparison and Testing Framework",
+        description: "Built a comprehensive model evaluation framework to compare candidate models (e.g., XGBoost, Logistic Regression, Decision Trees) beyond just ROC AUC. The system uncovered distribution-level insights by statistically analyzing how model scores differ for fraud vs. non-fraud cases — allowing teams to make confident release decisions backed by explainability and statistical rigor.",
+        technologies: ["Python", "scikit-learn", "Snowflake", "MLflow", "Airflow", "VertexAI"],
+        features: [
+            "<span class='section-header'>Role:</span>",
+            "Designed and implemented the comparison framework from scratch",
+            "Defined evaluation criteria across statistical distribution, separation, and hypothesis testing",
+            "Integrated the tool into the release pipeline with dashboard visualization",
+            "Socialized the approach with stakeholders to align on adoption across teams",
+            "",
+            "<span class='section-header'>Impact:</span>",
+            "Replaced ROC AUC as the sole decision metric with rich distributional comparisons",
+            "Detected potential model rollbacks and avoided degradation in production",
+            "Improved model selection and versioning confidence",
+            "Standardized model comparison and explainability for future releases",
+            "",
+            "<span class='section-header'>Approach:</span>",
+            "Measured statistical moments for fraud and non-fraud scores: mean, variance, skewness, standard deviation, and kurtosis",
+            "Used Kolmogorov–Smirnov (K–S) and Mann–Whitney U tests to assess if score distributions (old vs. new) were statistically different",
+            "Visualized separation between fraud vs. non-fraud distributions",
+            "Tracked score overlap and signal separation between model versions",
+            "Embedded statistical summaries and visual insights into Snowflake dashboards",
+            "Integrated the process into release criteria with MLflow and Airflow"
+        ],
+        github: "#",
+        live: "#"
     }
 };
 
