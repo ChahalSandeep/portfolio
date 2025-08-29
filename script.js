@@ -16,17 +16,17 @@ const projectData = {
         github: "#",
         live: "#"
     },
-    'computer-vision': {
-        title: "Computer Vision Pipeline",
-        description: "End-to-end computer vision system for object detection and tracking. Implemented YOLO and custom CNN architectures for real-time video processing with applications in surveillance, retail analytics, and autonomous systems.",
-        technologies: ["OpenCV", "PyTorch", "YOLO", "Docker", "CUDA", "FFmpeg"],
+    'revenue-analysis': {
+        title: "Cross-Product Revenue Opportunity Analysis",
+        description: "Discovered untapped revenue potential for an underperforming fraud product by analyzing behavioral overlap and retention patterns across customers using other tools in the suite. Led cross-functional analysis to quantify recoverable revenue and customer segments with monetization potential.",
+        technologies: ["Python", "PySpark", "Databricks", "Snowflake", "Pandas", "Matplotlib", "Power BI"],
         features: [
-            "Real-time object detection with YOLO v5/v8",
-            "Multi-object tracking with Kalman filters",
-            "Custom CNN architectures for specific use cases",
-            "Video processing pipeline with GPU acceleration",
-            "RESTful API for integration with other systems",
-            "Comprehensive model evaluation and testing suite"
+            "Identified the opportunity and framed the business problem",
+            "Led data exploration and designed the analytical framework",
+            "Presented findings to executives and influenced sales strategy",
+            "Quantified recoverable revenue and customer segments",
+            "Analyzed behavioral overlap and retention patterns",
+            "Used in executive pitches and GTM strategy decks"
         ],
         github: "#",
         live: "#"
