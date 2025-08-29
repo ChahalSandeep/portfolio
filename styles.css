@@ -1177,13 +1177,25 @@ section {
     line-height: 1.5;
 }
 
-/* Bold section headers in modal features */
-.modal-features li strong {
+/* Section headers in modal features */
+.modal-features li:first-child,
+.modal-features li:nth-child(9),
+.modal-features li:nth-child(17) {
+    list-style: none;
     color: #00b3b3;
     font-weight: 700;
     text-decoration: underline;
-    display: block;
+    font-size: 1.1rem;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
+    padding-left: 0;
+}
+
+/* Remove bullet points for section headers */
+.modal-features li:first-child::before,
+.modal-features li:nth-child(9)::before,
+.modal-features li:nth-child(17)::before {
+    content: none;
 }
 
 .modal-links {
