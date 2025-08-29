@@ -209,6 +209,36 @@ const projectData = {
         ],
         github: "#",
         live: "#"
+    },
+    'sampling-architecture': {
+        title: "Sampling Architecture for Fair and Accurate Models",
+        description: "Identified a critical imbalance in global fraud model training caused by naïve undersampling of unlabeled data, which led to misclassification of legitimate transactions and customer dissatisfaction. In some cases, the class imbalance reached extreme levels (e.g., 1:300 or even 1:300K), severely limiting generalization. The existing process treated a small subset of unlabeled data as non-fraud, skewing the class distribution and model generalizability.",
+        technologies: ["Python", "Snowflake", "Pandas", "Jupyter", "Matplotlib"],
+        features: [
+            "<span class='section-header'>Role:</span>",
+            "Audited model training workflows and uncovered key flaws in the negative sampling methodology",
+            "Designed and implemented a multistage and mutillevel sampling pipeline combining selective, stratified, and random strategies",
+            "Calibrated sampling ratios to align with behavior-level fraud categories",
+            "Engineered new features to increase signal strength across heterogeneous datasets",
+            "Ran test group comparisons to validate model lift and customer experience improvements",
+            "",
+            "<span class='section-header'>Impact:</span>",
+            "Reduced customer complaints by 60%",
+            "Improved model performance by 20% (precision and recall)",
+            "Tree-based fraud classifiers showed the most substantial lift and reduced false positives",
+            "Balanced fraud recall across different attack patterns and client sizes",
+            "Aligned model training with annual model improvement goals",
+            "Created a reusable pipeline for future training cycles",
+            "",
+            "<span class='section-header'>Approach:</span>",
+            "Investigated false positives using confusion matrix slices and historical complaint logs",
+            "Analyzed imbalance thresholds where performance degradation occurred",
+            "Built a pipeline with configurable stages: selective, stratified, random",
+            "Tuned for per-client fairness without compromising global accuracy",
+            "Validated approach with comparative A/B testing against legacy training pipeline across multiple releases"
+        ],
+        github: "#",
+        live: "#"
     }
 };
 
