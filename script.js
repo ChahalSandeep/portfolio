@@ -31,17 +31,17 @@ const projectData = {
         github: "#",
         live: "#"
     },
-    'autonomous-navigation': {
-        title: "Autonomous Navigation System",
-        description: "Robotic navigation system using SLAM algorithms and reinforcement learning. Successfully deployed on unmanned vehicles for path planning and obstacle avoidance in dynamic environments.",
-        technologies: ["ROS", "Python", "RL", "Gazebo", "C++", "OpenCV"],
+    'llm-retrieval': {
+        title: "Hybrid LLM Retrieval System for Product Intelligence",
+        description: "Designed and led the development of a hybrid LLM-based system combining structured data querying and unstructured document search to provide unified, real-time answers to natural language product questions. The system uses a multi-agent architecture with Snowflake SQL generation and semantic retrieval over Confluence pages, enabling teams to access metrics, meeting notes, documentation, and fraud insights in one conversational interface.",
+        technologies: ["Python", "SQLCoder (LLAMA)", "LangChain", "Snowflake", "FAISS", "Confluence API", "OpenAI", "Streamlit", "PostgreSQL"],
         features: [
-            "SLAM-based mapping and localization",
-            "Reinforcement learning for path planning",
-            "Dynamic obstacle avoidance algorithms",
-            "Multi-sensor fusion (LiDAR, Camera, IMU)",
-            "Real-time control system with PID tuning",
-            "Simulation environment for testing and validation"
+            "LLM Backbone: Fine-tuned SQLCoder (LLAMA-based model from Hugging Face)",
+            "Snowflake Query Agent: Converts NQL → SQL (via SQLCoder) → Executes in Snowflake → Returns structured JSON/table data",
+            "Confluence Search Agent: Embeds NQL → Semantic search over vectorized Confluence docs (via FAISS) → LLM summarizes top chunks",
+            "Fusion Layer: Merges results → Prioritizes confidence-ranked or combined output",
+            "Frontend: Streamlit UI using Snowflake-backed API",
+            "5× increase in internal platform usage within 3 weeks of release"
         ],
         github: "#",
         live: "#"
