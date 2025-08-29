@@ -17,7 +17,7 @@ const projectData = {
         live: "#"
     },
     'revenue-analysis': {
-        title: "Cross-Product Revenue Opportunity Analysis",
+        title: "Behavioral Signal Modeling for Cross-Product Insights",
         description: "Discovered untapped revenue potential for an underperforming fraud product by analyzing behavioral overlap and retention patterns across customers using other tools in the suite. Led cross-functional analysis to quantify recoverable revenue and customer segments with monetization potential.",
         technologies: ["Python", "PySpark", "Databricks", "Snowflake", "Pandas", "Matplotlib", "Power BI"],
         features: [
