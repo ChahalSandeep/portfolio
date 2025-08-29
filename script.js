@@ -177,6 +177,38 @@ const projectData = {
         ],
         github: "#",
         live: "#"
+    },
+    'supervised-learning-optimization': {
+        title: "Supervised Learning Optimization with Verification and Public Data",
+        description: "Designed and led a dual-pronged analytics initiative to improve fraud detection through better labeling and enriched training data. One component focused on integrating user verification workflows (emails, SMS, etc.) to capture labels in real-time, while the other centered on ingesting external public datasets to supplement internal features. The combined effort resulted in major performance gains for supervised fraud detection models.",
+        technologies: ["Python", "Pandas", "Snowflake", "Databricks", "Public Datasets", "Redis"],
+        features: [
+            "<span class='section-header'>Role:</span>",
+            "Designed and architected the overall solution to enrich model training data",
+            "Initiated the idea to integrate public datasets to supplement internal features",
+            "Led integration of real-time user verification service to capture fraud/legit labels",
+            "Built pipelines to ingest and join external fraud datasets with internal profiles",
+            "Trained fraud detection models using enriched datasets",
+            "Measured impact through test group analysis and fraud recall improvement",
+            "Delivered visual insights and summaries for stakeholders",
+            "",
+            "<span class='section-header'>Impact:</span>",
+            "Prevented over $1.2M in fraud for top customer segment within the first quarter",
+            "Increased training label volume by 3× through automated verification",
+            "Improved fraud model performance by 15% (precision and recall)",
+            "Enabled earlier detection of fraud by enriching behavioral signals and verification outcomes",
+            "Highlighted new fraud patterns and reduced false negatives",
+            "Contributed directly to model retraining and data ops roadmap",
+            "",
+            "<span class='section-header'>Approach:</span>",
+            "Integrated verification service with platform to trigger user challenges (email, OTP)",
+            "Collected resulting labels (pass/fail) and added to model training sets",
+            "Ingested public fraud blacklists and behavioral datasets into Snowflake",
+            "Conducted comparative testing before and after data augmentation",
+            "Trained new models with updated data and measured performance gains"
+        ],
+        github: "#",
+        live: "#"
     }
 };
 
