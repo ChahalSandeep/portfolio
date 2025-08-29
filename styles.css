@@ -1256,12 +1256,17 @@ section {
     border-color: #00b3b3;
 }
 
-.diagram-component.llm {
+.diagram-component.chatbot {
     background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
     border-color: #ff8c00;
 }
 
-.diagram-component.agent {
+.diagram-component.agent.sql {
+    background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
+    border-color: #00b3b3;
+}
+
+.diagram-component.agent.confluence {
     background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
     border-color: #00b3b3;
 }
@@ -1271,9 +1276,14 @@ section {
     border-color: #ff8c00;
 }
 
-.diagram-component.frontend {
+.diagram-component.output {
     background: linear-gradient(135deg, #00b3b3, #008080);
     border-color: #00b3b3;
+}
+
+.parallel-agents {
+    justify-content: space-around;
+    margin: 1rem 0;
 }
 
 /* Mobile responsive for diagram */
