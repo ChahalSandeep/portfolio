@@ -398,7 +398,7 @@ function openProjectModal(projectId) {
         featuresContainer.innerHTML = '';
         project.features.forEach(feature => {
             const li = document.createElement('li');
-            li.textContent = feature;
+            li.innerHTML = feature;
             featuresContainer.appendChild(li);
         });
         
