@@ -1113,9 +1113,7 @@ section {
 }
 
 .modal-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    display: block;
     padding: 2rem;
 }
 
