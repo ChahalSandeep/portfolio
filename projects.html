@@ -63,27 +63,6 @@
         <div class="container">
             <div class="projects-grid">
                 <!-- AI/ML Projects -->
-                <div class="project-card" onclick="openProjectModal('fraud-detection')">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Fraud Detection System</h3>
-                        <p>Advanced machine learning system for real-time fraud detection using ensemble methods and deep learning. Achieved 99.5% accuracy and reduced false positives by 40%.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">Scikit-learn</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> Demo</a>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="project-card" onclick="openProjectModal('revenue-analysis')">
                     <div class="project-image">
@@ -218,6 +197,9 @@
                         <p>Built modular CV system for tracking and jersey detection using R-CNN, OpenPose, OCR, and optical flow. Achieved ~20% boost in accuracy and deployed on AWS with MLflow tracking.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">CUDA</span>
+                            <span class="tech-tag">ONNX</span>
                             <span class="tech-tag">OpenCV</span>
                             <span class="tech-tag">MLflow</span>
                             <span class="tech-tag">Docker</span>
@@ -254,6 +236,152 @@
                         <div class="project-links">
                             <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fab fa-github"></i> Code</a>
                             <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openProjectModal('video-recognition-system')">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-video"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI-Driven Video Recognition System with OCR and Deep Visual Detection</h3>
+                        <p>Architected an OCR-enabled CV pipeline that reduced compute/storage by 50% and improved deployment time by 30%. Used PCA, clustering, FFNNs, and SSD vs YOLOv3 to process long-form video efficiently.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">scikit-learn</span>
+                            <span class="tech-tag">Tesseract</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">ONNX</span>
+                            <span class="tech-tag">MLflow</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Kubernetes</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Work Section -->
+    <section class="other-work-section">
+        <div class="container">
+            <div class="other-work-header">
+                <h2 class="other-work-title">Other Work I've Done</h2>
+                <p class="other-work-subtitle">Projects and prototypes smaller in scope or experimental that reflect my technical breadth and curiosity.</p>
+            </div>
+            
+            <div class="other-work-container">
+                <!-- Data Science Category -->
+                <div class="work-category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="category-content">
+                        <h3>Data Science, Analytics & Infra</h3>
+                        <div class="achievement-list">
+                            <div class="achievement-item">
+                                <span class="achievement-number">8%</span>
+                                <span class="achievement-text">Created visualization tools and internal dashboards by transforming complex data into actionable insights, improving performance by <strong>8%</strong>.</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-number">15%</span>
+                                <span class="achievement-text">Built ensemble fraud detection systems using XGBoost, Logistic Regression, and Random Forest, improving performance by <strong>~15%</strong>.</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-number">80%</span>
+                                <span class="achievement-text">Developed statistical comparison techniques for model architecture evaluation, enhancing model decisions by <strong>80%</strong>.</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-text">Defined business KPIs, fraud risk metrics, and OKRs; contributed to product strategy and roadmap planning.</span>
+                            </div>
+
+
+                            <div class="achievement-item">
+                                <span class="achievement-text">Implemented a Bluetooth/Wi-Fi tracking tool for real-world device mapping and ad performance optimization.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Robotics Category -->
+                <div class="work-category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="category-content">
+                        <h3>Robotics, Simulation & Control Systems</h3>
+                        <div class="achievement-list">
+                            <div class="achievement-item">
+                                <span class="achievement-number">50%</span>
+                                <span class="achievement-text">Enhanced robotic QA with an automated testing framework, increasing test uptime by <strong>50%</strong>.</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-text">Built and deployed motion planning algorithms like A*, Manhattan Distance, and Artificial Potential Fields on a 6-tire skid-steer platform, enabling navigation through static and dynamic obstacles.</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-text">Developed and implemented trajectory tracking and control algorithms (PD, PID, Dead Reckoning) for robotic platforms combining sensor fusion from GPS, IMU, ultrasonic sensors, and encoders.</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-text">Performed parameter identification of vehicle dynamics using sensor feedback and control models.</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-text">Integrated forward/inverse kinematics, Bayesian methods, and HMM-based behavior prediction on an intelligent robotic arm.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sports & RL Category -->
+                <div class="work-category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <div class="category-content">
+                        <h3>Sports & Reinforcement Learning</h3>
+                        <div class="achievement-list">
+                            <div class="achievement-item">
+                                <span class="achievement-number">30%</span>
+                                <span class="achievement-text">Designed an RL-based anomaly detection system for soccer game events, reducing delivery latency by <strong>30%</strong>.</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-text">Developed personalized sports experiences using in-house ML models tuned for user preferences.</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-text">Enhanced image quality using super-resolution techniques (SRCNN) on sports datasets.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Computer Vision Category -->
+                <div class="work-category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="category-content">
+                        <h3>Computer Vision & CV Utilities</h3>
+                        <div class="achievement-list">
+                            <div class="achievement-item">
+                                <span class="achievement-number">30%</span>
+                                <span class="achievement-text">Designed fiduciary marker-based visual systems based on barcodes / ArUco/April tags to improve object mapping by <strong>30%</strong>.</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-text">Designed vehicle detection models using Dense Optical Flow and Haar Cascade classifiers from roadside surveillance.</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-text">Implemented face recognition pipeline using PCA, Eigenfaces, and AdaBoost with Haar cascades.</span>
+                            </div>
                         </div>
                     </div>
                 </div>

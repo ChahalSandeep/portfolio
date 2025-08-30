@@ -265,7 +265,7 @@ const projectData = {
     'sports-player-tracking': {
         title: "AI-Driven Architecture for Sports Player Tracking and Identification",
         description: "Led the design and development of a modular system to improve player detection, tracking, and jersey number recognition in sports videos. Integrated ResNet50-based Faster R-CNN for player bounding boxes, OpenPose for joint/keypoint estimation, and a binary classifier to detect torso regions likely to contain jersey numbers. Followed this with OCR to extract jersey data.",
-        technologies: ["Python", "OpenCV", "MLflow", "Docker", "Kubernetes", "Bash Scripting", "AWS (S3, Lambda, ECS/EKS, Step Functions)"],
+        technologies: ["Python", "TensorFlow", "CUDA", "ONNX", "OpenCV", "MLflow", "Docker", "Kubernetes", "Bash Scripting", "AWS (S3, Lambda, ECS/EKS, Step Functions)"],
         features: [
             "<span class='section-header'>Role:</span>",
             "Designed architecture and integrated detection, keypoint, and OCR modules",
@@ -327,6 +327,37 @@ const projectData = {
             "Set up observability stack to monitor serving performance and model drift",
             "Supported integration with S3 and containerized build tools",
             "Facilitated reproducibility through containerized pipelines and tracked metadata"
+        ],
+        github: "#",
+        live: "#"
+    },
+    'video-recognition-system': {
+        title: "AI-Driven Video Recognition System with OCR and Deep Visual Detection",
+        description: "Designed and implemented a highly efficient computer vision pipeline to process long-form, high-frame-rate video for detection and classification tasks. The system integrated neural networks, dimensionality reduction, clustering, and OCR to improve inference speed and storage efficiency across the full pipeline.",
+        technologies: ["Python", "OpenCV", "TensorFlow", "scikit-learn", "Tesseract", "NumPy", "Matplotlib", "ONNX", "MLflow", "Docker", "AWS", "Kubernetes"],
+        features: [
+            "<span class='section-header'>Role:</span>",
+            "Architected the end-to-end ML pipeline to process 100–120 minute raw video files at 60fps",
+            "Implemented frame selection logic to downsample to 15–30fps, reducing compute needs",
+            "Applied PCA for dimensionality reduction and k-means clustering for grouping key frames",
+            "Trained feed-forward neural networks on clustered segments for downstream prediction",
+            "Built and compared visual detectors using SSD and YOLOv3 for object recognition",
+            "Developed OCR-based modules to extract numeric and graphic information",
+            "Managed model optimization and conversion to ONNX format for deployment",
+            "",
+            "<span class='section-header'>Impact:</span>",
+            "Reduced compute and storage usage by over 50% across processing stages",
+            "Improved pipeline throughput and reduced deployment time by 30%",
+            "Enabled scalable and cost-effective video ML workloads for long-form inputs",
+            "Enhanced accuracy and efficiency in visual detection and recognition tasks",
+            "",
+            "<span class='section-header'>Approach:</span>",
+            "Used clustering and FPS reduction to identify representative frames",
+            "Combined PCA and FFNN to build lean, high-signal classification models",
+            "Applied OCR on filtered bounding boxes to extract key text/numeric data",
+            "Compared SSD vs YOLOv3 performance for frame-level object detection",
+            "Built modular pipeline compatible with multiple deployment formats",
+            "Managed experimentation and performance tracking with MLFlow"
         ],
         github: "#",
         live: "#"

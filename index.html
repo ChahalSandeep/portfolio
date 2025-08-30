@@ -132,27 +132,7 @@
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
-                <div class="project-card" onclick="openProjectModal('fraud-detection')">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Fraud Detection System</h3>
-                        <p>Advanced machine learning system for real-time fraud detection using ensemble methods and deep learning. Achieved 99.5% accuracy and reduced false positives by 40%.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">Scikit-learn</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> Demo</a>
-                        </div>
-                    </div>
-                </div>
+
 
                 <div class="project-card" onclick="openProjectModal('revenue-analysis')">
                     <div class="project-image">
@@ -190,6 +170,9 @@
                         <p>Built modular CV system for tracking and jersey detection using R-CNN, OpenPose, OCR, and optical flow. Achieved ~20% boost in accuracy and deployed on AWS with MLflow tracking.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">CUDA</span>
+                            <span class="tech-tag">ONNX</span>
                             <span class="tech-tag">OpenCV</span>
                             <span class="tech-tag">MLflow</span>
                             <span class="tech-tag">Docker</span>
@@ -326,12 +309,44 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="project-card" onclick="openProjectModal('video-recognition-system')">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-video"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI-Driven Video Recognition System with OCR and Deep Visual Detection</h3>
+                        <p>Architected an OCR-enabled CV pipeline that reduced compute/storage by 50% and improved deployment time by 30%. Used PCA, clustering, FFNNs, and SSD vs YOLOv3 to process long-form video efficiently.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">scikit-learn</span>
+                            <span class="tech-tag">Tesseract</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">ONNX</span>
+                            <span class="tech-tag">MLflow</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Kubernetes</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="projects-button-container">
                 <a href="projects.html" class="btn btn-primary">View All My Projects</a>
             </div>
         </div>
     </section>
+
+
 
     <!-- About Section -->
     <section id="about" class="about">
