@@ -166,6 +166,12 @@ body.dark-theme .bar {
     background-color: #00b3b3;
 }
 
+body.dark-theme .nav-menu {
+    background-color: #1a1a1a;
+    box-shadow: 0 10px 27px rgba(0, 179, 179, 0.1);
+    border-top: 1px solid rgba(0, 179, 179, 0.2);
+}
+
 body.dark-theme .theme-btn {
     border-color: #00b3b3;
     color: #00b3b3;
@@ -1313,13 +1319,13 @@ section {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: #1a1a1a;
+        background-color: #ffffff;
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 128, 128, 0.1);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.1);
         padding: 2rem 0;
-        border-top: 1px solid rgba(0, 128, 128, 0.2);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .nav-menu.active {
