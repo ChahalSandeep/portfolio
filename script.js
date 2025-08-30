@@ -267,6 +267,48 @@ const projectData = {
         ],
         github: "#",
         live: "#"
+    },
+    'sports-player-tracking': {
+        title: "AI-Driven Architecture for Sports Player Tracking and Identification",
+        description: "Led the design and development of a modular system to improve player detection, tracking, and jersey number recognition in sports videos. Integrated ResNet50-based Faster R-CNN for player bounding boxes, OpenPose for joint/keypoint estimation, and a binary classifier to detect torso regions likely to contain jersey numbers. Followed this with OCR to extract jersey data.",
+        technologies: ["Python", "OpenCV", "MLflow", "Docker", "Kubernetes", "Bash Scripting", "AWS (S3, Lambda, ECS/EKS, Step Functions)"],
+        features: [
+            "<span class='section-header'>Role:</span>",
+            "Designed architecture and integrated detection, keypoint, and OCR modules",
+            "Built FFNN-based binary classifier to identify jersey-bearing regions",
+            "Designed storage/output strategy via S3 for each stage",
+            "Led deployment using Dockerized containers triggered via AWS Step Functions",
+            "Defined final evaluation criteria based on per-frame player coverage",
+            "",
+            "<span class='section-header'>Impact:</span>",
+            "Improved end-to-end tracking accuracy by ~20%",
+            "Increased jersey number detection and identification accuracy",
+            "Enabled seamless multi-model deployment and logging in production",
+            "Created reusable pipeline to scale to additional sports or camera angles",
+            "",
+            "<span class='section-header'>Approach:</span>",
+            "Player Detection: ResNet50-based Faster R-CNN",
+            "Joint Estimation: OpenPose",
+            "Jersey Classification: FFNN",
+            "OCR: Applied on confident torso crops",
+            "Tracking: Lucas-Kanade and Farneback Optical Flow",
+            "Smoothing: Kalman Filtering",
+            "Evaluation Metric: Frame-by-frame player coverage across full game video",
+            "",
+            "<span class='section-header'>Architecture:</span>",
+            "Input: Video frames split and pushed to S3",
+            "Detection Stage: Faster R-CNN detects players → bounding boxes stored in S3",
+            "Pose Estimation: OpenPose estimates joints → results saved in S3",
+            "Torso Detection: FFNN classifier runs on cropped torso images to flag jersey regions",
+            "OCR: Triggered only on positive torso flags",
+            "Motion Tracking: Sparse/Dense optical flow for player tracking",
+            "Smoothing & Prediction: Kalman filter for missed detections or occlusion",
+            "Pipeline Coordination: AWS Step Functions + Lambda triggers for each model stage",
+            "Model Tracking & Logging: MLflow used to track accuracy and experiments",
+            "Deployment: Dockerized modules deployed via ECS/EKS"
+        ],
+        github: "#",
+        live: "#"
     }
 };
 

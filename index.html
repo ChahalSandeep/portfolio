@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandeep Chahal's Portfolio</title>
-    <link rel="stylesheet" href="styles.css?v=21">
+    <link rel="stylesheet" href="styles.css?v=24">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -155,6 +155,31 @@
                             <span class="tech-tag">Pandas</span>
                             <span class="tech-tag">Matplotlib</span>
                             <span class="tech-tag">Power BI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openProjectModal('sports-player-tracking')">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-running"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI-Driven Architecture for Sports Player Tracking and Identification</h3>
+                        <p>Built modular CV system for tracking and jersey detection using R-CNN, OpenPose, OCR, and optical flow. Achieved ~20% boost in accuracy and deployed on AWS with MLflow tracking.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">MLflow</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Bash Scripting</span>
+                            <span class="tech-tag">AWS (S3, Lambda, ECS/EKS, Step Functions)</span>
                         </div>
                         <div class="project-links">
                             <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fab fa-github"></i> Code</a>
@@ -484,6 +509,11 @@
                 <h2 id="modalTitle">Project Title</h2>
             </div>
             <div class="modal-body">
+                <div class="modal-image">
+                    <div class="project-placeholder large">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                </div>
                 <div class="modal-details">
                     <div class="modal-description">
                         <h3>Description</h3>
