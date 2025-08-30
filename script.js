@@ -172,81 +172,6 @@ const projectData = {
         github: "#",
         live: "#"
     },
-    'predictive-analytics': {
-        title: "Predictive Analytics Platform",
-        description: "Comprehensive analytics platform for business intelligence and predictive modeling. Features real-time dashboards, automated reporting, and advanced statistical analysis capabilities.",
-        technologies: ["Python", "Streamlit", "Pandas", "Plotly", "Scikit-learn", "PostgreSQL"],
-        features: [
-            "Interactive dashboards with real-time data",
-            "Automated report generation and scheduling",
-            "Advanced statistical modeling and forecasting",
-            "Data visualization with interactive charts",
-            "User authentication and role-based access",
-            "API integration for external data sources"
-        ],
-        github: "#",
-        live: "#"
-    },
-    'nlp-analysis': {
-        title: "NLP Text Analysis Tool",
-        description: "Natural language processing system for text analysis, sentiment analysis, and document classification. Built with state-of-the-art transformer models and custom preprocessing pipelines.",
-        technologies: ["Python", "Transformers", "HuggingFace", "NLTK", "FastAPI", "Redis"],
-        features: [
-            "Sentiment analysis with BERT and RoBERTa",
-            "Document classification and topic modeling",
-            "Named entity recognition (NER)",
-            "Text summarization and keyword extraction",
-            "Real-time text processing API",
-            "Custom model fine-tuning pipeline"
-        ],
-        github: "#",
-        live: "#"
-    },
-    'ml-pipeline': {
-        title: "ML Pipeline Orchestration",
-        description: "End-to-end machine learning pipeline orchestration system with automated training, evaluation, and deployment capabilities. Supports multiple ML frameworks and cloud platforms.",
-        technologies: ["Python", "MLflow", "Airflow", "Docker", "Kubernetes", "AWS"],
-        features: [
-            "Automated model training and evaluation",
-            "Version control for models and data",
-            "Scalable training on Kubernetes clusters",
-            "Automated model deployment and rollback",
-            "Monitoring and alerting for model performance",
-            "Multi-cloud deployment support"
-        ],
-        github: "#",
-        live: "#"
-    },
-    'mobile-app': {
-        title: "AI-Powered Mobile App",
-        description: "Cross-platform mobile application with integrated AI features including image recognition, voice processing, and personalized recommendations.",
-        technologies: ["React Native", "TensorFlow Lite", "Firebase", "Node.js", "Python", "AWS"],
-        features: [
-            "Real-time image recognition with TensorFlow Lite",
-            "Voice processing and speech-to-text",
-            "Personalized recommendation engine",
-            "Offline-first architecture",
-            "Push notifications and user engagement",
-            "Analytics and user behavior tracking"
-        ],
-        github: "#",
-        live: "#"
-    },
-    'cloud-infrastructure': {
-        title: "Cloud ML Infrastructure",
-        description: "Enterprise-grade cloud infrastructure for machine learning workloads. Includes auto-scaling, monitoring, and cost optimization features for production ML systems.",
-        technologies: ["AWS", "Terraform", "Docker", "Prometheus", "Kubernetes", "Python"],
-        features: [
-            "Infrastructure as Code with Terraform",
-            "Auto-scaling ML training clusters",
-            "Cost optimization and resource management",
-            "Comprehensive monitoring and alerting",
-            "Security and compliance features",
-            "Multi-region deployment support"
-        ],
-        github: "#",
-        live: "#"
-    },
     'supervised-learning-optimization': {
         title: "Supervised Learning Optimization with Verification and Public Data",
         description: "Designed and led a dual-pronged analytics initiative to improve fraud detection through better labeling and enriched training data. One component focused on integrating user verification workflows (emails, SMS, etc.) to capture labels in real-time, while the other centered on ingesting external public datasets to supplement internal features. The combined effort resulted in major performance gains for supervised fraud detection models.",
@@ -375,6 +300,33 @@ const projectData = {
             "Pipeline Coordination: AWS Step Functions + Lambda triggers for each model stage",
             "Model Tracking & Logging: MLflow used to track accuracy and experiments",
             "Deployment: Dockerized modules deployed via ECS/EKS"
+        ],
+        github: "#",
+        live: "#"
+    },
+    'mlops-platform': {
+        title: "MLOps Platform for End-to-End Model Deployment and Monitoring",
+        description: "Led the design, build, and optimization of an end-to-end MLOps platform to streamline model deployment, monitoring, and lifecycle management across classification, regression, and clustering use cases. The platform significantly improved model delivery speed and collaboration between data science and engineering teams.",
+        technologies: ["AWS (S3, Step Functions)", "Kubernetes", "MLflow", "Cortex", "Neptune.ai", "Python", "Docker", "Airflow"],
+        features: [
+            "<span class='section-header'>Role:</span>",
+            "Spearheaded MLOps architecture to support batch and inference workflows",
+            "Integrated CI/CD pipelines for seamless deployment and rollback of models",
+            "Set up automated tracking of experiments and model versions using MLflow and Neptune",
+            "Used Kubernetes and Cortex to enable containerized, scalable model serving",
+            "Coordinated cross-team workflows between data science, product, and DevOps",
+            "",
+            "<span class='section-header'>Impact:</span>",
+            "Improved time-to-deployment and experimentation velocity by ~60%",
+            "Enabled consistent tracking of model metrics, versioning, and lineage",
+            "Enhanced reliability and transparency for model operations",
+            "",
+            "<span class='section-header'>Approach:</span>",
+            "Architected modular pipelines for data ingestion, model training, and validation",
+            "Used AWS Step Functions to orchestrate training, validation, and deployment jobs",
+            "Set up observability stack to monitor serving performance and model drift",
+            "Supported integration with S3 and containerized build tools",
+            "Facilitated reproducibility through containerized pipelines and tracked metadata"
         ],
         github: "#",
         live: "#"
