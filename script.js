@@ -1,3 +1,63 @@
+// Theme Toggle Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, setting up theme toggle...');
+    const themeToggleBtn = document.getElementById('theme-toggle-btn');
+    const body = document.body;
+    
+    if (!themeToggleBtn) {
+        console.error('Theme toggle button not found!');
+        return;
+    }
+    
+    console.log('Theme toggle button found:', themeToggleBtn);
+    
+    // Check for saved theme preference or default to light theme
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    console.log('Current theme from localStorage:', currentTheme);
+    
+    body.className = currentTheme === 'dark' ? 'dark-theme' : '';
+    
+    // Update button icon based on current theme
+    updateThemeIcon(currentTheme);
+    
+    // Theme toggle click handler
+    themeToggleBtn.addEventListener('click', function() {
+        console.log('Theme toggle clicked!');
+        const isDark = body.classList.contains('dark-theme');
+        console.log('Is dark theme currently active?', isDark);
+        
+        if (isDark) {
+            // Switch to light theme
+            console.log('Switching to light theme...');
+            body.classList.remove('dark-theme');
+            localStorage.setItem('theme', 'light');
+            updateThemeIcon('light');
+        } else {
+            // Switch to dark theme
+            console.log('Switching to dark theme...');
+            body.classList.add('dark-theme');
+            localStorage.setItem('theme', 'dark');
+            updateThemeIcon('dark');
+        }
+    });
+    
+    console.log('Theme toggle setup complete!');
+});
+
+function updateThemeIcon(theme) {
+    const themeToggleBtn = document.getElementById('theme-toggle-btn');
+    const icon = themeToggleBtn.querySelector('i');
+    const themeLabel = themeToggleBtn.querySelector('.theme-label');
+
+    if (theme === 'dark') {
+        icon.className = 'fas fa-sun';
+        themeLabel.textContent = 'Switch to Light Theme';
+    } else {
+        icon.className = 'fas fa-moon';
+        themeLabel.textContent = 'Switch to Dark Theme';
+    }
+}
+
 // Project data for modals (must be defined before modal functions)
 const projectData = {
     // All Projects (projects.html)
