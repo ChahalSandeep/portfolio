@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('Theme toggle button found:', themeToggleBtn);
     
-    // Check for saved theme preference or default to light theme
-    const currentTheme = localStorage.getItem('theme') || 'light';
+                        // Check for saved theme preference or default to dark theme
+                    const currentTheme = localStorage.getItem('theme') || 'dark';
     console.log('Current theme from localStorage:', currentTheme);
     
     body.className = currentTheme === 'dark' ? 'dark-theme' : '';
