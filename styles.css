@@ -120,6 +120,7 @@ body {
 }
 
 /* Dark Theme Styles */
+html.dark-theme,
 body.dark-theme {
     background-color: #1a1a1a;
     color: #ffffff;
@@ -190,8 +191,8 @@ body.dark-theme .constant-text {
 }
 
 body.dark-theme .slide-word {
-    color: #00b3b3;
-    text-shadow: 0 0 20px rgba(0, 179, 179, 0.5);
+    color: #ff8c00;
+    text-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
 }
 
 body.dark-theme .hero-subtitle {
