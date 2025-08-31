@@ -50,6 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     });
                 });
 
+
+
 function updateThemeIcon(theme) {
     const themeToggleBtn = document.getElementById('theme-toggle-btn');
     const icon = themeToggleBtn.querySelector('i');
@@ -610,10 +612,6 @@ function openProjectModal(projectId) {
             li.innerHTML = feature;
             featuresContainer.appendChild(li);
         });
-        
-        // Update links
-        document.getElementById('modalGithub').href = project.github;
-        document.getElementById('modalLive').href = project.live;
         
         // Show modal
         modal.style.display = 'block';

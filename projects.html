@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Projects - Sandeep Chahal's Portfolio</title>
-    <link rel="stylesheet" href="styles.css?v=68">
+    <link rel="stylesheet" href="styles.css?v=70">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
@@ -26,11 +26,26 @@
                 <a href="index.html">Sandeep Chahal</a>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="index.html#about" class="nav-link">About</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
-                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#tools" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Projects <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="projects.html" class="dropdown-item">All Projects</a></li>
+                        <li><a href="index.html#projects" class="dropdown-item">Featured Projects</a></li>
+                        <li><a href="#other-work" class="dropdown-item">Other Projects</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
             </ul>
             <div class="theme-toggle">
                 <button id="theme-toggle-btn" class="theme-btn">
@@ -58,20 +73,21 @@
         </div>
     </section>
 
-    <!-- All Projects Section -->
+    <!-- Featured Projects Section -->
     <section class="all-projects">
         <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 <!-- AI/ML Projects -->
 
-                <div class="project-card" onclick="openProjectModal('revenue-analysis')">
+                <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
                             <i class="fas fa-chart-line"></i>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Behavioral Signal Modeling for Cross-Product Insights</h3>
+                        <h3>Behavioral Signal Modeling for Cross-Product Insights (Cross-Functional Project)</h3>
                         <p>Led analytics initiative to uncover $2M+ in untapped ARR through customer behavior insights. Resulted in 100% sales uplift and adoption in GTM strategy.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
@@ -82,111 +98,15 @@
                             <span class="tech-tag">Matplotlib</span>
                             <span class="tech-tag">Power BI</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        <div class="project-learn-more">
+                            <button class="btn btn-primary learn-more-btn" onclick="openProjectModal('revenue-analysis')">
+                                <i class="fas fa-info-circle"></i> Learn More
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card" onclick="openProjectModal('llm-retrieval')">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Hybrid LLM Retrieval System for Product Intelligence</h3>
-                        <p>Designed a multi-agent system combining Snowflake and Confluence search to enable natural language querying across structured and unstructured data — boosting platform usage 5×.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">SQLCoder (LLAMA)</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Snowflake</span>
-                            <span class="tech-tag">FAISS</span>
-                            <span class="tech-tag">Confluence API</span>
-                            <span class="tech-tag">HuggingFace</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="project-card" onclick="openProjectModal('sampling-architecture')">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-balance-scale"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Sampling Architecture for Fair and Accurate Models</h3>
-                        <p>Built a multistage and multilevel sampling pipeline that identified performance cliffs in sampling ratios, corrected extreme class imbalance (up to 1:300K), reduced complaints by 60%, and boosted model performance by 20%.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Snowflake</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">Jupyter</span>
-                            <span class="tech-tag">Matplotlib</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" onclick="openProjectModal('statistical-model-comparison')">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Statistical Model Comparison and Testing Framework</h3>
-                        <p>Designed a statistical framework for comparing fraud models using distributional moments and hypothesis tests. Enabled explainable model selection and prevented production degradation.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">scikit-learn</span>
-                            <span class="tech-tag">Snowflake</span>
-                            <span class="tech-tag">MLflow</span>
-                            <span class="tech-tag">Airflow</span>
-                            <span class="tech-tag">VertexAI</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" onclick="openProjectModal('supervised-learning-optimization')">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Supervised Learning Optimization with Verification and Public Data</h3>
-                        <p>Designed a dual-enrichment strategy for fraud model training using real-time labels and public datasets — boosting recall by 15%, tripling label volume, and preventing $1.2M in fraud.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">Snowflake</span>
-                            <span class="tech-tag">Databricks</span>
-                            <span class="tech-tag">Public Datasets</span>
-                            <span class="tech-tag">Redis</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" onclick="openProjectModal('sports-player-tracking')">
+                <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
                             <i class="fas fa-running"></i>
@@ -207,14 +127,120 @@
                             <span class="tech-tag">Bash Scripting</span>
                             <span class="tech-tag">AWS (S3, Lambda, ECS/EKS, Step Functions)</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        <div class="project-learn-more">
+                            <button class="btn btn-primary learn-more-btn" onclick="openProjectModal('sports-player-tracking')">
+                                <i class="fas fa-info-circle"></i> Learn More
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card" onclick="openProjectModal('mlops-platform')">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Hybrid (Multi-Agent) LLM Retrieval System for Product Intelligence</h3>
+                        <p>Designed a multi-agent system combining Snowflake and Confluence search to enable natural language querying across structured and unstructured data — boosting platform usage 5×.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">SQLCoder (LLAMA)</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Snowflake</span>
+                            <span class="tech-tag">FAISS</span>
+                            <span class="tech-tag">Confluence API</span>
+                            <span class="tech-tag">HuggingFace</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">Streamlit</span>
+                        </div>
+                        <div class="project-learn-more">
+                            <button class="btn btn-primary learn-more-btn" onclick="openProjectModal('llm-retrieval')">
+                                <i class="fas fa-info-circle"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sampling Architecture for Fair and Accurate Models</h3>
+                        <p>Built a multistage and multilevel sampling pipeline that identified performance cliffs in sampling ratios, corrected extreme class imbalance (up to 1:300K), reduced complaints by 60%, and boosted model performance by 20%.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Snowflake</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Jupyter</span>
+                            <span class="tech-tag">Matplotlib</span>
+                        </div>
+                        <div class="project-learn-more">
+                            <button class="btn btn-primary learn-more-btn" onclick="openProjectModal('sampling-architecture')">
+                                <i class="fas fa-info-circle"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Statistical Model Comparison and Testing Framework</h3>
+                        <p>Designed a statistical framework for comparing fraud models using distributional moments and hypothesis tests. Enabled explainable model selection and prevented production degradation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">scikit-learn</span>
+                            <span class="tech-tag">Snowflake</span>
+                            <span class="tech-tag">MLflow</span>
+                            <span class="tech-tag">Airflow</span>
+                            <span class="tech-tag">VertexAI</span>
+                        </div>
+                        <div class="project-learn-more">
+                            <button class="btn btn-primary learn-more-btn" onclick="openProjectModal('statistical-model-comparison')">
+                                <i class="fas fa-info-circle"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Supervised Learning Optimization with Verification and Public Data</h3>
+                        <p>Designed a dual-enrichment strategy for fraud model training using real-time labels and public datasets — boosting recall by 15%, tripling label volume, and preventing $1.2M in fraud.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Snowflake</span>
+                            <span class="tech-tag">Databricks</span>
+                            <span class="tech-tag">Public Datasets</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                        <div class="project-learn-more">
+                            <button class="btn btn-primary learn-more-btn" onclick="openProjectModal('supervised-learning-optimization')">
+                                <i class="fas fa-info-circle"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
                             <i class="fas fa-cogs"></i>
@@ -233,14 +259,15 @@
                             <span class="tech-tag">Docker</span>
                             <span class="tech-tag">Airflow</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        <div class="project-learn-more">
+                            <button class="btn btn-primary learn-more-btn" onclick="openProjectModal('mlops-platform')">
+                                <i class="fas fa-info-circle"></i> Learn More
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card" onclick="openProjectModal('video-recognition-system')">
+                <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
                             <i class="fas fa-video"></i>
@@ -263,9 +290,10 @@
                             <span class="tech-tag">AWS</span>
                             <span class="tech-tag">Kubernetes</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        <div class="project-learn-more">
+                            <button class="btn btn-primary learn-more-btn" onclick="openProjectModal('video-recognition-system')">
+                                <i class="fas fa-info-circle"></i> Learn More
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -274,7 +302,7 @@
     </section>
 
     <!-- Other Work Section -->
-    <section class="other-work-section">
+    <section class="other-work-section" id="other-work">
         <div class="container">
             <div class="other-work-header">
                 <h2 class="other-work-title">Other Work I've Done</h2>
@@ -449,14 +477,7 @@
                             <!-- Features will be loaded here -->
                         </ul>
                     </div>
-                    <div class="modal-links">
-                        <a href="#" id="modalGithub" class="btn btn-primary" target="_blank">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                        <a href="#" id="modalLive" class="btn btn-secondary" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                    </div>
+
                 </div>
             </div>
         </div>
