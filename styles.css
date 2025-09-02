@@ -559,6 +559,18 @@ body.dark-theme .btn-secondary:hover {
     box-shadow: 0 5px 15px rgba(0, 128, 128, 0.3);
 }
 
+body.dark-theme .btn-resume {
+    background: #00b3b3;
+    color: #ffffff;
+    border: 2px solid #00b3b3;
+}
+
+body.dark-theme .btn-resume:hover {
+    background: #008080;
+    border-color: #008080;
+    box-shadow: 0 5px 15px rgba(0, 128, 128, 0.3);
+}
+
 body.dark-theme .profile-image {
     border: 2px solid rgba(0, 128, 128, 0.3);
     box-shadow: 0 0 15px rgba(0, 128, 128, 0.3);
@@ -854,6 +866,20 @@ body.dark-theme .achievement-item:hover .achievement-text strong {
     color: #ffffff;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.btn-resume {
+    background: #27ae60;
+    color: #ffffff;
+    border: 2px solid #27ae60;
+    transition: all 0.3s ease;
+}
+
+.btn-resume:hover {
+    background: #229954;
+    border-color: #229954;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
 }
 
 .hero-image {
